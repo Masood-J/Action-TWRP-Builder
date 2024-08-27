@@ -111,7 +111,7 @@ jobs:
     - name: Sync manifests
       run: |
         git clone https://gitlab.com/OrangeFox/sync.git # (or, using ssh, "git clone git@gitlab.com:OrangeFox/sync.git")
-        cd ~/OrangeFox_sync/sync/
+        cd sync
         ./orangefox_sync.sh --branch 12.1 --path ~/workspace
       working-directory: workspace
       
